@@ -38,19 +38,19 @@ if (operationAns.operation === "Withdraw") {
         }
      ]);
 
-     if (withdraw.amount > myBalance) {
+if (withdraw.amount > myBalance) {
         console.log("insufficient amount!");
      
-    }else{
+}else{
         let amountLeft = myBalance - withdraw.amount;
-     console.log(`The Remaining balance is: ${ amountLeft}`);}
+     console.log(`The Remaining balance is: ${ amountLeft}`);
+    }
 
-} else  if (operationAns.operation === "Check Balance") {
-      console.log(`Your Current Balance is: ${myBalance} `)
+}else  if (operationAns.operation === "Check Balance") {
+      console.log(`Your Current Balance is: ${myBalance} `);
 }
 
-
-} else {
+}else {
     console.log("Incorrect PIN code!")
 }
 
